@@ -9,7 +9,7 @@ class PassengerAccount:
         if amount < 0:
             raise ValueError("Amount cannot be negative.")
 
-        # Add money to the wallet
+        # top up money to the wallet
         self.__wallet_balance += amount
         print(f"Wallet balance: ₱{self.__wallet_balance:.2f}")
 
@@ -21,3 +21,4 @@ class PassengerAccount:
         # Deduct the fare
         self.__wallet_balance -= fare_amount
         print(f"Payment successful! Remaining balance: ₱{self.__wallet_balance:.2f}")
+
